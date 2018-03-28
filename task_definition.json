@@ -1,0 +1,82 @@
+{
+  "requiresAttributes": [],
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:xxxxxx:task-definition/appname:22",
+  "networkMode": "bridge",
+  "status": "ACTIVE",
+  "revision": "22",
+  "taskRoleArn": null,
+  "containerDefinitions": [
+    {
+      "volumesFrom": [],
+      "memory": 300,
+      "extraHosts": null,
+      "dnsServers": null,
+      "disableNetworking": null,
+      "dnsSearchDomains": null,
+      "portMappings": [
+        {
+          "hostPort": 3000,
+          "containerPort": 3000,
+          "protocol": "tcp"
+        },
+        {
+          "hostPort": 8001,
+          "containerPort": 8001,
+          "protocol": "tcp"
+        },
+        {
+          "hostPort": 8002,
+          "containerPort": 8002,
+          "protocol": "tcp"
+        }
+      ],
+      "hostname": null,
+      "essential": true,
+      "entryPoint": null,
+      "mountPoints": [],
+      "name": "appname",
+      "ulimits": null,
+      "dockerSecurityOptions": null,
+      "environment": [
+        {
+          "name": "XY_ACCOUNT_KEY",
+          "value": "22222222222222222222222222222222222"
+        },
+        {
+          "name": "XY_HOST_KEY",
+          "value": "111111111111111111111111111111111111"
+        },
+        {
+          "name": "XY_HOSTNAME",
+          "value": "Dev"
+        },
+        {
+          "name": "CLIENT_URL",
+          "value": "http://dev.sampledomain.com"
+        },
+        {
+          "name": "CLIENT_SECRET",
+          "value": "a0b7dr6-1111-nota-real-secret"
+        },
+        {
+          "name": "CLIENT_TOKEN",
+          "value": "a0b7dr6-1111-nota-real-token"
+        }
+      ],
+      "links": null,
+      "workingDirectory": null,
+      "readonlyRootFilesystem": null,
+      "image": "alsdkfdsl/appname:dev.22",
+      "command": null,
+      "user": null,
+      "dockerLabels": null,
+      "logConfiguration": null,
+      "cpu": 200,
+      "privileged": null,
+      "memoryReservation": null
+    }
+  ],
+  "placementConstraints": [],
+  "volumes": [],
+  "family": "appname"
+}
